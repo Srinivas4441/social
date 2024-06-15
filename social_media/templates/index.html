@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="header">
+    <h1>Social Media Platform Usage Analysis</h1>
+    <p>Enter the social media platform to analyze its usage.</p>
+</div>
+
+<div class="form-container">
+    <form action="{{ url_for('analyze') }}" method="POST">
+        <label for="platform">Platform:</label>
+        <input type="text" id="platform" name="platform" required>
+        <button type="submit">Analyze</button>
+    </form>
+</div>
+{% endblock %}

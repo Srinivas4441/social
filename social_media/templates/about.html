@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="about-container">
+    <h1>About This Application</h1>
+    <p><strong>What is it?</strong></p>
+    <p>This web application is designed to analyze and predict social media usage time based on various activity metrics. By inputting data such as the number of posts per day, likes received per day, comments received per day, and messages sent per day, users can gain insights into their daily usage time on a selected social media platform.</p>
+    <p><strong>What will the output display?</strong></p>
+    <p>The output of the analysis will display:</p>
+    <ul>
+        <li>A summary of the prediction results, including the mean squared error and R² score, which indicate the accuracy of the prediction model.</li>
+        <li>A visual comparison of the actual vs. predicted daily usage time for the selected platform, displayed as a bar chart.</li>
+    </ul>
+    <p><strong>What technologies did we use?</strong></p>
+    <p>We utilized a range of technologies to build this application, including:</p>
+    <ul>
+        <li><strong>Python</strong>: The backend logic for processing the data and performing the linear regression analysis.</li>
+        <li><strong>Flask</strong>: The web framework used to build the web application and handle user interactions.</li>
+        <li><strong>Pandas</strong>: For data manipulation and preparation.</li>
+        <li><strong>Scikit-learn</strong>: For building and training the linear regression model.</li>
+        <li><strong>Matplotlib & Seaborn</strong>: For creating the visualizations of the analysis results.</li>
+        <li><strong>HTML/CSS</strong>: For structuring and styling the web pages, ensuring a user-friendly and visually appealing interface.</li>
+        <li><strong>Bootstrap</strong>: For additional styling and responsive design features.</li>
+    </ul>
+</div>
+{% endblock %}

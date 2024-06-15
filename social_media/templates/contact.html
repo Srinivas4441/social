@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="header">
+    <h1>Contact Us</h1>
+    <p>For any inquiries or feedback, please contact us at:</p>
+    <p>Email: srinivasvalaval4441@gmail.com</p>
+    <p>Phone: 78160972450</p>
+    <div class="contact-image-container">
+        <div class="contact-image">
+            <img src="{{ url_for('static', filename='your_image.jpg.jpeg') }}" alt="Contact Image">
+        </div>
+    </div>
+    <div class="social-links">
+        <a href="https://www.instagram.com/srinivas_valavala?igsh=Nm41enk2dnV4c295" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://github.com/Srinivas4441" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+
+
